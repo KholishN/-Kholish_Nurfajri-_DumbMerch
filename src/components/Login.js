@@ -10,7 +10,7 @@ const Login = () => {
                 <p className="text-secondary mb-5">Go shopping for merchandise,just go merch shopping. 
                                                 the biggest merchandise in <b>Indonesia</b></p>
                 <Button className="me-5  py-1">Login</Button>
-                <a href="#" className="mt-5 text-light"> Register</a>
+                <p className="mt-5 text-light">Register</p>
                 </div>
             <div className="right ms-5">
                 <Card style={{ width: '20rem' }} className="formLogin text-light p-2">
