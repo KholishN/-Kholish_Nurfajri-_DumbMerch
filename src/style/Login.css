@@ -1,0 +1,65 @@
+.my-bg{
+    height: 100vh;
+    background-color: #0b0b0b;
+}
+
+.loginCard{
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    column-gap: 100px;
+}
+/* left-side */
+.left{
+    width: 40%;
+    margin-left: -100px;
+    font-family: sans-serif;
+    margin-top: -100px;
+}
+
+.left img{
+    width: 250px;
+}
+
+.left button{
+    background-color: #F74D4D;
+    border: none;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+.left button:hover{
+    background-color: #F74D4D;
+    border: none;
+}
+
+.left a{
+    text-decoration: none;
+}
+/* /left-side */
+
+/* right-side */
+
+.right{
+    margin-top: -100px;
+}
+
+.formLogin{
+    background-color: #181818 !important;
+    font-family: sans-serif;
+}
+
+.loginInput{
+    background-color: #D2D2D240 !important;
+    color: white !important;
+}
+
+.loginbtn{
+    width: 100%;
+    background-color: #F74D4D !important;
+    border: none !important;
+}
+
+
+
+/* /right-side */
