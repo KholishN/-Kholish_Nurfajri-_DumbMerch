@@ -1,6 +1,6 @@
 import {Button,Card,InputGroup,FormControl,Container} from "react-bootstrap"
 import Logo from "../images/Frame.png"
-const Login = () => {
+const Register = () => {
     return(
         
             <Container className="d-flex loginCard">
@@ -15,13 +15,22 @@ const Login = () => {
             <div className="right ms-5">
                 <Card style={{ width: '20rem' }} className="formLogin text-light p-2">
                     <Card.Body>
-                        <Card.Title className="mb-4 fs-2">Login</Card.Title>
+                        <Card.Title className="mb-4 fs-2">Register</Card.Title>
+                        <InputGroup className="mb-3">
+                            <FormControl
+                            placeholder="Name"
+                            aria-label="Name"
+                            aria-describedby="basic-addon1"
+                            type="text"
+                            className="loginInput"
+                            />
+                            </InputGroup>
                         <InputGroup className="mb-3">
                             <FormControl
                             placeholder="Email"
                             aria-label="Email"
                             aria-describedby="basic-addon1"
-                            type="text"
+                            type="email"
                             className="loginInput"
                             />
                             </InputGroup>
@@ -34,7 +43,7 @@ const Login = () => {
                             className="loginInput"
                             />
                             </InputGroup>
-                        <Button className="mt-4 loginbtn" type="submit">Login</Button>
+                        <Button className="mt-4 loginbtn" type="submit">Register</Button>
                         </Card.Body>
                     </Card>
             </div>
@@ -42,4 +51,4 @@ const Login = () => {
 
     )
 }
-export default Login
+export default Register
