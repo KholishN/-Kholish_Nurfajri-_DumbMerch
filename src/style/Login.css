@@ -1,5 +1,5 @@
 .my-bg{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #0b0b0b;
 }
 
@@ -64,3 +64,63 @@
 
 
 /* /right-side */
+/* navCustomer */
+
+.logo{
+    width: 60px;
+    margin-left: -80px;
+}
+
+.navContent{
+    margin-right: -70px;
+}
+/* /navCustomer */
+
+/* homepage */
+
+.product{
+    font-size: 24px;
+    color: #F74D4D;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.cardCatalogGroup{
+    display: grid !important;
+    grid-template-columns: repeat(5,1fr) ;
+    column-gap: 20px ;
+    row-gap: 20px;
+}
+
+.cardCatalog{
+    width: 241px !important;
+    max-height: 410px !important;
+    padding: 0px !important;
+    border: none  !important;
+    background-color: #212121 !important;
+    
+}
+
+.cardImg{
+    min-height: 75% !important;
+    max-height: 75% !important;
+    width: 100% !important;
+    margin-bottom: -8px;
+}
+
+.cardTitle{
+    color: #F74D4D ;
+    font-size: 18px;
+}
+
+.cardText span{
+    display: block;
+    color: white;
+    margin-bottom: 2px;
+    font-size: 14px;
+}
+
+
+/* /homepage */
+
+
