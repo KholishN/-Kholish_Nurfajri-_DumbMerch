@@ -1,6 +1,25 @@
 import {Button,Card,InputGroup,FormControl,Container} from "react-bootstrap"
 import Logo from "../images/Frame.png"
+import {useNavigate} from "react-router-dom"
+import {Link} from "react-router-dom"
+import {useState} from "react"
+
+
+
+
 const Login = () => {
+
+    const [login, setLogin] = useState({
+        isLogin : false,
+        user: {
+            email: "",
+            password: ""
+        }
+    })
+
+    
+
+
     return(
         
             <Container className="d-flex loginCard">
@@ -10,7 +29,7 @@ const Login = () => {
                 <p className="text-secondary mb-5">Go shopping for merchandise,just go merch shopping. 
                                                 the biggest merchandise in <b>Indonesia</b></p>
                 <Button className="me-5  py-1">Login</Button>
-                <p className="mt-5 text-light">Register</p>
+                <Link to="/Register"className="mt-5 text-light text-decoration-none">Register</Link>
                 </div>
             <div className="right ms-5">
                 <Card style={{ width: '20rem' }} className="formLogin text-light p-2">

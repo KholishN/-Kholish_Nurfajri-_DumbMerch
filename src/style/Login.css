@@ -35,6 +35,7 @@
 
 .left p{
     display: inline-block;
+    text-decoration: none;
 }
 /* /left-side */
 
