@@ -24,14 +24,14 @@ const Register = () => {
     const handleOnSubmit = (e) =>{
         e.preventDefault()
 
-        navigate("/Login")
+        navigate("/login")
 
         console.log(registers)
     }
 
     const navigate = useNavigate();
     const handleNavigateToLogin = () => {
-        navigate("/Login")
+        navigate("/login")
     }
 
 
@@ -46,7 +46,7 @@ const Register = () => {
                 <p className="text-secondary mb-5">Go shopping for merchandise,just go merch shopping.
                                                 the biggest merchandise in <b>Indonesia</b></p>
                 <Button className="me-5 py-1" onClick={handleNavigateToLogin}>Login</Button>
-                <a href="/Register" className="mt-5 text-light text-decoration-none">Register</a>
+                <a href="/register" className="mt-5 text-light text-decoration-none">Register</a>
                 </div>
             <form onSubmit={handleOnSubmit}>
             <div className="right ms-5">

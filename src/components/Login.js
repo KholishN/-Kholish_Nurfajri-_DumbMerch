@@ -11,7 +11,7 @@ const Login = () => {
 
     const navigate = useNavigate();
     const handleNavigateToLogin = () => {
-        navigate("/Login")
+        navigate("/login")
     }
 
     const [login, setLogin] = useState({
@@ -58,7 +58,7 @@ const Login = () => {
                 <p className="text-secondary mb-5">Go shopping for merchandise,just go merch shopping. 
                                                 the biggest merchandise in <b>Indonesia</b></p>
                 <Button className="me-5  py-1" onClick={handleNavigateToLogin}>Login</Button>
-                <Link to="/Register"className="mt-5 text-light text-decoration-none">Register</Link>
+                <Link to="/register"className="mt-5 text-light text-decoration-none">Register</Link>
                 </div>
             <form onSubmit={handleOnSubmit}>
             <div className="right ms-5">

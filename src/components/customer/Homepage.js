@@ -1,15 +1,14 @@
-
-import mouse from "../../images/mouse.png"
-import keyboard from "../../images/keyboard.png"
-import {Container,CardGroup,Card} from "react-bootstrap"
-import dataProduct from "./dummydata/datadummy"
-import { useState } from "react"
+import {Container,CardGroup,Card} from "react-bootstrap";
+import dataProduct from "./dummydata/datadummy";
+import { useState } from "react";
+import {Link} from "react-router-dom";
 
 
 
-function Homepage() {
 
-    const [datas] = useState(dataProduct)
+function HomePage() {
+
+    const [datas] = useState(dataProduct);
 
   return (
    
@@ -19,11 +18,11 @@ function Homepage() {
         </div>
 
         <CardGroup className="cardCatalogGroup">
-            {datas.map((data, index) =>(
-            <Card className="cardCatalog" key={index}>
+            {datas.map((data,id) =>(
+            <Card className="cardCatalog" key={id}>
                 <Card.Img className="cardImg"  variant="top" src={data.img} />
                 <Card.Body>
-                <Card.Title className="cardTitle">{data.title}</Card.Title>
+                <Link to={`/detail-page/${id}`} > <Card.Title className="cardTitle">{data.title}</Card.Title></Link>
                 <Card.Text className="cardText">
                     <span>Rp.{data.price}</span>
                     <span>Stock : {data.stock}</span>
@@ -33,8 +32,7 @@ function Homepage() {
                 ))}
             </CardGroup>
         </Container>
-
-  )
+)
 }
 
-export default Homepage
+export default HomePage

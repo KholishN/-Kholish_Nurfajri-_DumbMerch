@@ -3,8 +3,10 @@ import {BrowserRouter, Routes , Route } from "react-router-dom"
 // "pages" component
 import Login from "./components/Login"
 import Register from "./components/Register"
-import Homepage from "./components/customer/Homepage"
 import NavigationBarCustomer from "./components/customer/NavigationBarCustomer"
+import HomePage from "./components/customer/HomePage"
+import DetailPage from "./components/customer/DetailPage"
+
 
 // /"pages" component
 
@@ -21,9 +23,11 @@ function App() {
       <NavigationBarCustomer />
 
       <Routes>
-        <Route path="/Login" element={<Login />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/" element={<Homepage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/detail-page/:id" element={<DetailPage />} />
+
       </Routes>
       </div>
     </BrowserRouter>

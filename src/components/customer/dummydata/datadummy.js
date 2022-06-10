@@ -3,6 +3,7 @@ import keyboard from "../../../images/keyboard.png"
 
 const data = [
     {
+        id: 1,
         title: "Keyboard",
         img: keyboard,
         price: "1.000.000",
@@ -10,6 +11,7 @@ const data = [
     },
     
     {
+        id: 2,
         title: "Mouse",
         img: mouse,
         price: "700.000",
@@ -17,6 +19,7 @@ const data = [
     },
 
     {
+        id: 3,
         title: "Keyboard Gaming",
         img: keyboard,
         price: "1.200.000",
@@ -24,6 +27,7 @@ const data = [
     },
 
     {
+        id: 4,
         title: "Mouse Gaming",
         img: mouse,
         price: "1.000.000",

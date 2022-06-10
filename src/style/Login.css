@@ -119,8 +119,60 @@
     margin-bottom: 2px;
     font-size: 14px;
 }
-
-
 /* /homepage */
+
+/* detailpage */
+
+.descContainer{
+    column-gap: 50px;
+    padding-right: 100px !important;
+    padding-left: 100px !important;
+    margin-top: 30px;
+}
+
+.detailImg {
+    flex: 50%;
+}
+
+.detailImg img{
+    width: 436px;
+    height: 555px;
+}
+
+.detailDesc {
+    margin-top: 30px;
+}
+
+.descTitle{
+    font-size: 48px;
+    color: #F74D4D;
+}
+
+.descText{
+    font-size: 18px;
+    color: white;
+    text-align: justify;
+}
+
+.descPrice{
+    font-size: 24px;
+    color: #F74D4D;
+    text-align: end;
+}
+
+.descBuy{
+    margin-top: 50px;
+}
+
+.descBuy button{
+    width: 100%;
+    background-color: #F74D4D;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    font-size: 18px;
+}
+/* /detailpage */
+
 
 
