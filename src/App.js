@@ -11,6 +11,8 @@ import Category from "./components/admin/category/Category"
 import EditCategory from "./components/admin/category/EditCategory"
 import ProductList from "./components/admin/productlist/ProductList"
 import EditProductList from "./components/admin/productlist/EditProductList"
+import AdminComplain from "./components/admin/AdminComplain"
+import CustomerComplain from "./components/customer/CustomerComplain"
 
 
 
@@ -38,7 +40,8 @@ function App() {
         <Route path="/edit-category/" element={<EditCategory />} />
         <Route path="/product-list" element={<ProductList />} />
         <Route path="/edit-product-list" element={<EditProductList />} />
-
+        <Route path="/complain" element={<CustomerComplain />} />
+        <Route path="/admin-complain" element={<AdminComplain />} />
 
       </Routes>
       </div>

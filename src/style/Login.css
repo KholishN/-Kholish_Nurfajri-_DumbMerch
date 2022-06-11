@@ -409,6 +409,165 @@
 
 /* /edit-product-list */
 
+/* complain-cutomer */
+    .contcc{
+        margin-top: 30px;
+        margin-right: 0px !important;
+        width: 100% !important;
+        margin-left: 0px !important;
+        height: 100px !important;
+    }
+
+    .admin{
+        width: 271px;
+        display: flex;
+        margin-left: 50px;
+        height: 100% !important;
+    }
+
+    .admin img{
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        display: flex;
+    }
+
+    .nameComplain{
+        font-size: 14px;
+        color: white;
+        margin-bottom: 2px;
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .messageComplain{
+        font-size: 14px;
+        color: #ABABAB;
+        width: 200px;
+        margin-left: 20px;
+
+
+    }
+
+    .a{
+        display: grid;
+        grid-template-columns: repeat(1,1fr) !important;
+        
+    }
+
+    .b{
+        width: 200px;
+    }
+
+    .ccleft{
+        flex: 25%;
+        width: 50px;
+        display: grid;
+        grid-template-columns: repeat(1fr,1fr) !important;
+    }
+
+    .ccright{
+        width: 100px;
+        flex: 75%;
+        padding-top: 7px;
+    }
+
+
+    .garis{
+        border-left: 1px solid rgba(106, 106, 106, 0.3);
+        height: 790px;
+        margin-top: -300px;
+        margin-left: 400px;
+        width: 1px;
+        
+    }
+
+    .messagecost{
+        width: 900px;
+        justify-content: center;
+        margin-left: 0px ;
+        margin-top: 30px;
+        height: 40px;
+        background-color: rgba(171, 171, 171, 0.15);
+        align-items: flex-end;
+        justify-content: end;
+        border: none;
+        padding: 10px;
+        color: white;
+        display: flex;
+    }
+
+    .costcontent{
+        height: 200px;
+        width: 1000px ;
+        margin-top: -300px;
+        margin-left: 450px;
+        padding: 30px!;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .p{
+        margin-bottom: -70px;
+    }
+
+    .imgmsgcost{
+        margin-left: 20px;
+    }
+    
+    .chat{
+        background-color: rgba(87, 87, 87, 1);
+        color: white;
+        min-height: 35px;
+        max-height: 100px;
+        width: 300px;
+        margin-left: 30px;
+        margin-top: 10px;
+        border-radius: 5px;
+        padding-left: 15px;
+        padding-top: 4px;
+        padding-right: 5px;
+    }
+
+    .warpcont{
+        height: 580px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .warpbubble{
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 15px solid rgba(87, 87, 87, 1);
+        border-bottom: 10px solid transparent;
+        margin-left: 20px;
+        margin-right: -30px;
+        margin-top: 15px;
+    }
+
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 15px solid #555;
+        border-bottom: 10px solid transparent;
+        margin-top: 15px;
+    }
+    
+    .warpend{
+        justify-content: end !important;
+        margin-bottom: 20px;
+    }
+
+/* /complain-cutomer */
+
+
 
 
 
