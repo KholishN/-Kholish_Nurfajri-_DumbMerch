@@ -6,6 +6,9 @@ import Register from "./components/Register"
 import NavigationBarCustomer from "./components/customer/NavigationBarCustomer"
 import HomePage from "./components/customer/HomePage"
 import DetailPage from "./components/customer/DetailPage"
+import Profile from "./components/customer/Profile"
+
+
 
 
 // /"pages" component
@@ -27,6 +30,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/detail-page/:id" element={<DetailPage />} />
+        <Route path="/profile/" element={<Profile />} />
 
       </Routes>
       </div>

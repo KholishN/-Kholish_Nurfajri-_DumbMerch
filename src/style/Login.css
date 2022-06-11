@@ -111,6 +111,7 @@
 .cardTitle{
     color: #F74D4D ;
     font-size: 18px;
+    text-decoration: none !important;
 }
 
 .cardText span{
@@ -119,6 +120,9 @@
     margin-bottom: 2px;
     font-size: 14px;
 }
+
+
+
 /* /homepage */
 
 /* detailpage */
@@ -173,6 +177,122 @@
     font-size: 18px;
 }
 /* /detailpage */
+
+/* profile */
+.containerProfile{
+    column-gap: 0px !important;
+    display: flex;
+    margin-top: 25px;
+    margin-left: -50px;
+    margin-right: -50px;
+}
+.profileLeft{
+    width: 650px;
+    display: flex;
+    flex: 60%;
+    width: 790px;
+    column-gap: 0px;
+}
+
+.profileRight{
+    width: 524px;
+    flex: 40%;
+    margin-left: 200px;
+}
+
+.profileImage{
+    height: 435px;
+    width: 338px;
+}
+
+.profilePicture{
+    height: 120px;
+    width: 80px !important;
+}
+
+.profileLogo{
+    width: 70px !important;
+    height: 70px !important;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profileCard{
+    width: 524px;
+    height: 145px;
+    position: static;
+    flex-direction: row !important;
+    column-gap: 20px;
+    background-color: #303030 !important;
+    margin-bottom: 30px;
+}
+
+.profile-card-text{
+    display: flex ;
+    width: 444px ;
+}
+
+.profile-card-content{
+    width: 300px;
+}
+
+.profile-card-title{
+    font-size: 14px;
+    color: #F74D4D;
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.profile-card-date{
+    font-size: 9px;
+    color: #F74D4D;
+    margin-bottom: 10px;
+}
+
+.profile-card-price{
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.601);
+    margin-bottom: 30px;
+}
+
+.profile-card-sub-price{
+    font-size: 10px;
+    color: white;
+    font-weight: 900;
+}
+
+.profileTrans{
+    font-size: 24px;
+    color: #F74D4D;
+    margin-bottom: 50px;
+}
+
+.myProfile{
+    font-size: 24px;
+    color: #F74D4D;
+    margin-bottom: 50px;
+}
+
+.biodata{
+    margin-top: 80px;
+    margin-left: 0px;
+}
+
+.biodataTitle{
+    list-style: none;
+    font-size: 18px;
+    color: #F74D4D;
+}
+
+.biodataContent{
+    list-style: none;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+/* /profile */
+
 
 
 

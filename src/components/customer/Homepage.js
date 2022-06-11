@@ -22,7 +22,7 @@ function HomePage() {
             <Card className="cardCatalog" key={id}>
                 <Card.Img className="cardImg"  variant="top" src={data.img} />
                 <Card.Body>
-                <Link to={`/detail-page/${id}`} > <Card.Title className="cardTitle">{data.title}</Card.Title></Link>
+                <Link to={`/detail-page/${id}`} className="cardTitle"> <Card.Title className="cardTitle">{data.title}</Card.Title></Link>
                 <Card.Text className="cardText">
                     <span>Rp.{data.price}</span>
                     <span>Stock : {data.stock}</span>
