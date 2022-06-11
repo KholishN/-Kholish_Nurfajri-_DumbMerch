@@ -9,10 +9,8 @@ import DetailPage from "./components/customer/DetailPage"
 import Profile from "./components/customer/Profile"
 import Category from "./components/admin/category/Category"
 import EditCategory from "./components/admin/category/EditCategory"
-
-
-
-
+import ProductList from "./components/admin/productlist/ProductList"
+import EditProductList from "./components/admin/productlist/EditProductList"
 
 
 
@@ -38,7 +36,8 @@ function App() {
         <Route path="/profile/" element={<Profile />} />
         <Route path="/category/" element={<Category />} />
         <Route path="/edit-category/" element={<EditCategory />} />
-
+        <Route path="/product-list" element={<ProductList />} />
+        <Route path="/edit-product-list" element={<EditProductList />} />
 
 
       </Routes>

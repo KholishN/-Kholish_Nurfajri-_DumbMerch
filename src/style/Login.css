@@ -352,6 +352,62 @@
 }
 /* /edit-category */
 
+/* product-list */
+
+
+
+.contlp{
+    margin-top: 30px;
+}
+
+.lp{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.plno{width:61px ;}
+.plimg{width:207px ;}
+.plname{width:197px ;}
+.pldesc{width:247px ;}
+.plprice{width:158px ;}
+.plqty{width:92px ;}
+.plact{width:339px ;}
+
+/* /product-list */
+
+/* edit-product-list */
+
+    .editlp{
+        margin-top: 20px;
+    }
+
+    .tareaedit{
+        height: 147px !important;
+        resize: none;
+    }
+
+    .btnfile{
+        width: 350px !important;
+        background-color: #0b0b0b !important;
+        border: none !important;
+        color: white !important;
+        margin-bottom: 30px;
+    }
+
+    ::-webkit-file-upload-button{
+        background-color: #F74D4D !important;
+        border-radius: 5px !important;
+        width: 120px;
+        height: 40px;
+        color: white !important;
+        border: none !important;
+    }
+
+    
+
+
+/* /edit-product-list */
 
 
 
