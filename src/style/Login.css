@@ -293,6 +293,68 @@
 }
 /* /profile */
 
+/* category */
+.btneditcat{
+    border: none !important;
+    margin-right: 10px;
+    padding: 4px 40px !important;
+}
+
+.btndeletecat{
+    border: none !important;
+    margin-right: 10px;
+    padding: 4px 30px !important;
+
+}
+
+.catno{
+    width: 424.11px;
+}
+
+.catname{
+    width: 424.11px;
+}
+
+.listcat{
+    font-size: 24px;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.ContCat{
+    margin-top: 45px;
+}
+/* /category */
+
+/* edit-category */
+
+.editcat{
+    margin-top: 80px;
+}
+.editcattit{
+    font-size: 24px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.editcatinput{
+    background-color: #3c3c3c !important;
+    margin-bottom: 30px;
+    border: 2px solid white !important;
+    color: white !important;
+}
+
+.editcatbtn{
+    width: 100%;
+    background-color: #56C05A !important;
+    border-color: #56C05A !important;
+    margin-top: 20px;
+}
+/* /edit-category */
+
+
+
+
 
 
 

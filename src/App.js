@@ -7,6 +7,11 @@ import NavigationBarCustomer from "./components/customer/NavigationBarCustomer"
 import HomePage from "./components/customer/HomePage"
 import DetailPage from "./components/customer/DetailPage"
 import Profile from "./components/customer/Profile"
+import Category from "./components/admin/category/Category"
+import EditCategory from "./components/admin/category/EditCategory"
+
+
+
 
 
 
@@ -31,6 +36,10 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/detail-page/:id" element={<DetailPage />} />
         <Route path="/profile/" element={<Profile />} />
+        <Route path="/category/" element={<Category />} />
+        <Route path="/edit-category/" element={<EditCategory />} />
+
+
 
       </Routes>
       </div>
