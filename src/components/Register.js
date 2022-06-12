@@ -17,21 +17,25 @@ const Register = () => {
         setRegisters({
             ...registers,
             [e.target.name]: e.target.value
+            
+
         })
+        console.log(e.target.name)
+        console.log(e.target.value)
 
     }
 
     const handleOnSubmit = (e) =>{
         e.preventDefault()
 
-        navigate("/login")
+        navigate("/")
 
         console.log(registers)
     }
 
     const navigate = useNavigate();
     const handleNavigateToLogin = () => {
-        navigate("/login")
+        navigate("/")
     }
 
 

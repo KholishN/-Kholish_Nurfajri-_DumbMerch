@@ -1,7 +1,7 @@
 import Logo from "../../images/Frame.png"
 import {Navbar,Container,Nav} from "react-bootstrap"
 
-function NavigationBarCustomer() {
+function NavigationBarAdmin() {
   return (
     <Navbar collapseOnSelect expand="lg"  variant="dark">
     <Container>
@@ -13,9 +13,10 @@ function NavigationBarCustomer() {
       <Nav className="me-auto">
       </Nav>
       <Nav className="navContent">
-        <Nav.Link className="text-light active" href="/complain">Complain</Nav.Link>
-        <Nav.Link className="text-light active" href="/profile">Profile</Nav.Link>
-        <Nav.Link className="text-light active" href="#memes">Logout</Nav.Link>
+        <Nav.Link className="text-light" href="/admin-complain">Complain</Nav.Link>
+        <Nav.Link className="text-light" href="/category">Category</Nav.Link>
+        <Nav.Link className="text-light" href="/product-list">Product</Nav.Link>
+        <Nav.Link className="text-light" href="#">Logout</Nav.Link>
   
       </Nav>
     </Navbar.Collapse>
@@ -25,4 +26,4 @@ function NavigationBarCustomer() {
   )
 }
 
-export default NavigationBarCustomer
+export default NavigationBarAdmin

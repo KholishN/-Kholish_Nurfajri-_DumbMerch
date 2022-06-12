@@ -2,6 +2,7 @@ import {Container,CardGroup,Card} from "react-bootstrap";
 import dataProduct from "./dummydata/datadummy";
 import { useState } from "react";
 import {Link} from "react-router-dom";
+import NavbarCustomer from "./NavigationBarCustomer"
 
 
 
@@ -10,10 +11,12 @@ function HomePage() {
 
     const [datas] = useState(dataProduct);
 
+    
+
   return (
-   
-    <Container>
-        <div>
+      <Container >
+        <NavbarCustomer />
+        <div >
         <h3 className="product">Product</h3>
         </div>
 

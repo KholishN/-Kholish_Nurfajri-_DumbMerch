@@ -1,69 +1,73 @@
 import {Container} from "react-bootstrap";
 import customer from "../../images/customer.jpg"
+import NavigationBarAdmin from "./NavigationBarAdmin"
+
 
 function AdminComplain() {
   return (
     
-    <Container className="contcc    ">
-        <div className="admin a">
+    <Container >
+        <NavigationBarAdmin />
+        <div className="contccadmin">
+        <div className="adminpage ab">
             
-           <div className="d-grid b">
+           <div className="d-grid ba">
            <div className="d-flex">
-            <div className="ccleft">
+            <div className="ccleftadmin">
             <img src={customer} alt="admin" className="adminphoto"/>
             </div>
-            <div className="ccright">
-            <p className="nameComplain">Nata</p>
-            <p className="messageComplain">Lorem ipsum dolor sit amet.</p>
+            <div className="ccrightadmin">
+            <p className="nameComplainadmin">Nata</p>
+            <p className="messageComplainadmin">Lorem ipsum dolor sit amet.</p>
             </div>
             </div>
            </div>
             
-           <div className="d-grid b">
+           <div className="d-grid ba">
            <div className="d-flex">
-            <div className="ccleft">
+            <div className="ccleftadmin">
             <img src={customer} alt="admin" className="adminphoto"/>
             </div>
-            <div className="ccright">
-            <p className="nameComplain">Nata</p>
-            <p className="messageComplain">Lorem ipsum dolor sit amet.</p>
+            <div className="ccrightadmin">
+            <p className="nameComplainadmin">Nata</p>
+            <p className="messageComplainadmin">Lorem ipsum dolor sit amet.</p>
             </div>
             </div>
            </div>
 
-            <div className="garis">
+            <div className="garisadmin">
             </div>
             
             
-            <div className="costcontent">
-                <div className="p">
+            <div className="costcontentadmin">
+                <div className="pz">
 
-                <div className="warpbubble warpend">
-                        <div className="chat">
+                <div className="warpbubbleadmin warpendadmin">
+                        <div className="chatadmin">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum?.</p>
                         </div>
                         <div className="triangle-right"></div>
                     </div>
 
-                <div className="warpbubble">
+                <div className="warpbubbleadmin">
                         <div className="bubble">
-                            <img src={customer} alt="chat" className="imgmsgcost" />
+                            <img src={customer} alt="chatadmin" className="imgmsgcostadmin" />
                         </div>
                         <div className="triangle-left"></div>
-                        <div className="chat">
+                        <div className="chatadmin">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eum?.</p>
                         </div>
                     </div>
 
                 
 
-                <input type="text" className="messagecost" placeholder="Sand Message.."/>
+                <input type="text" className="messagecostadmin" placeholder="Sand Message.."/>
                 </div>
             </div>
             </div>
-        
+            </div>
     </Container>
-  )
+  ) 
 }
 
 export default AdminComplain

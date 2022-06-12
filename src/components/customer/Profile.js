@@ -2,12 +2,16 @@ import {Container,Card} from "react-bootstrap";
 import mouse from "../../images/mouse.png";
 import Logo from "../../images/Frame.png"
 import keyboard from "../../images/keyboard.png"
+import NavbarCustomer from "./NavigationBarCustomer"
+
 
 
 
 function Profile() {
   return (
-    <Container className="containerProfile">
+    <Container >
+        <NavbarCustomer />
+        <div className="containerProfile">
         <div className="profileLeft">
             <div className="block">
             <h3 className="d-block myProfile">My Profile</h3>
@@ -70,6 +74,7 @@ function Profile() {
             </Card>
         </div>  
         
+            </div>
             </div>
     </Container>
   )

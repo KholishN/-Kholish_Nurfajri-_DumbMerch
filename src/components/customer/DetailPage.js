@@ -1,9 +1,11 @@
 import {Container} from "react-bootstrap";
-// import mouse from "../../images/mouse.png";
+import mouse from "../../images/mouse.png";
 import dataProduct from "./dummydata/datadummy";
 import { useEffect,useState } from "react";
 import { useParams } from "react-router-dom";
-// import { useParams } from "react-router-dom";
+import NavigationBarCustomer from "./NavigationBarCustomer"
+import Rate from "../features/Rate"
+
 
 function DetailPage() {
 
@@ -18,24 +20,24 @@ function DetailPage() {
           setData(null);
         };
       }, []);
-    const [datas] = useState(dataProduct);
 // console.log(id)
 // console.log(datas)
 
 
-
+const [rating, setRating] = useState(0);
 
 
     return (
-        <Container className="descContainer d-flex ">
-        <div key={id}>
+        <Container >
+            <NavigationBarCustomer/>
+        <div key={id} className="descContainer d-flex ">
             <div className="detailImg">
-                <img src={data?.img} alt="img" />
+                <img src={mouse} alt="img" />
                 </div>
             <div className="detailDesc">
                 <div>
                     <h2 className="descTitle">{data?.name}</h2>
-                    <span className="descText">Stock: {data?.stock}</span>
+                    <span className="descText">Stock: 200</span>
                     </div>
                 <div>
                     <ul>
@@ -53,13 +55,17 @@ function DetailPage() {
                         Alias consequuntur odio maiores tempora sit dolore consectetur tempore itaque, voluptates odit minus unde?</p>
                     </div>
                 <div>
-                    <h5 className="descPrice mt-5">Rp.{data?.price}</h5>
+                    <h5 className="descPrice mt-5">Rp.300.000</h5>
                 </div>
                 <div className="descBuy">
                     <button>Buy</button>
                 </div>
             </div>
             </div>
+
+        <div className="review">
+        <Rate rating={rating} onRating={(rate) => setRating(rate)}/>
+        </div>
         </Container>
         
   )

@@ -1,9 +1,11 @@
 import {Container,Button,InputGroup,Form} from "react-bootstrap";
-
+import NavigationBarAdmin from "../NavigationBarAdmin"
 
 function EditCategory() {
   return (
-    <Container className="editcat">
+    <Container >
+        <NavigationBarAdmin />
+      <div className="editcat">
         <div>
             <h3 className="editcattit">Edit Category</h3>
         <InputGroup >
@@ -16,6 +18,7 @@ function EditCategory() {
       </InputGroup>
 
       <Button className="editcatbtn">Save</Button>
+        </div>
         </div>
     </Container>
   )

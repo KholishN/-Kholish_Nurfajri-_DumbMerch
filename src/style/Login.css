@@ -74,6 +74,13 @@
 .navContent{
     margin-right: -70px;
 }
+
+.nav-link:active{
+    color: #F74D4D !important;
+    font-weight: bold ;
+}
+
+
 /* /navCustomer */
 
 /* homepage */
@@ -122,7 +129,6 @@
 }
 
 
-
 /* /homepage */
 
 /* detailpage */
@@ -132,19 +138,24 @@
     padding-right: 100px !important;
     padding-left: 100px !important;
     margin-top: 30px;
+    grid-template-columns: 2,1fr;
 }
 
 .detailImg {
     flex: 50%;
+    display: grid !important;
+    width: 436px !important;
 }
 
 .detailImg img{
     width: 436px;
     height: 555px;
+    display: flex;
 }
 
 .detailDesc {
-    margin-top: 30px;
+    margin-top: 10px;
+    width: 650px;
 }
 
 .descTitle{
@@ -340,7 +351,7 @@
 .editcatinput{
     background-color: #3c3c3c !important;
     margin-bottom: 30px;
-    border: 2px solid white !important;
+    border: 2px solid #BCBCBC !important;
     color: white !important;
 }
 
@@ -414,7 +425,7 @@
         margin-top: 30px;
         margin-right: 0px !important;
         width: 100% !important;
-        margin-left: 0px !important;
+        margin-left: -120px !important;
         height: 100px !important;
     }
 
@@ -475,7 +486,8 @@
 
     .garis{
         border-left: 1px solid rgba(106, 106, 106, 0.3);
-        height: 790px;
+        height: 860px ;
+        max-height: 860px;
         margin-top: -300px;
         margin-left: 400px;
         width: 1px;
@@ -567,6 +579,208 @@
 
 /* /complain-cutomer */
 
+/* complain-admin */
+.contccadmin{
+    margin-top: 30px;
+    margin-right: 0px !important;
+    width: 100% !important;
+    margin-left: -120px !important;
+    height: 100px !important;
+}
+
+.adminpage{
+    width: 271px;
+    display: flex;
+    margin-left: 50px;
+    height: 100% !important;
+}
+
+.adminpage img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+}
+
+.nameComplainadmin{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 2px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.messageComplainadmin{
+    font-size: 14px;
+    color: #ABABAB;
+    width: 200px;
+    margin-left: 20px;
+
+
+}
+
+.ab{
+    display: grid;
+    grid-template-columns: repeat(1,1fr) !important;
+    
+}
+
+.ba{
+    width: 200px;
+}
+
+.ccleftadmin{
+    flex: 25%;
+    width: 50px;
+    display: grid;
+    grid-template-columns: repeat(1fr,1fr) !important;
+}
+
+.ccrightadmin{
+    width: 100px;
+    flex: 75%;
+    padding-top: 7px;
+}
+
+
+.garisadmin{
+    border-left: 1px solid rgba(106, 106, 106, 0.3);
+    height: 795px ;
+    max-height: 860px;
+    margin-top: -300px;
+    margin-left: 400px;
+    width: 1px;
+    
+}
+
+.messagecostadmin{
+    width: 900px;
+    justify-content: center;
+    margin-left: 0px ;
+    margin-top: 30px;
+    height: 40px;
+    background-color: rgba(171, 171, 171, 0.15);
+    align-items: flex-end;
+    justify-content: end;
+    border: none;
+    padding: 10px;
+    color: white;
+    display: flex;
+}
+
+.costcontentadmin{
+    height: 200px;
+    width: 1000px ;
+    margin-top: -300px;
+    margin-left: 450px;
+    padding: 30px!;
+    display: flex;
+    align-items: flex-end;
+}
+
+.pz{
+    margin-bottom: -70px;
+}
+
+.imgmsgcostadmin{
+    margin-left: 20px;
+}
+
+.chatadmin{
+    background-color: rgba(87, 87, 87, 1);
+    color: white;
+    min-height: 35px;
+    max-height: 100px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-right: 5px;
+}
+
+
+.warpbubbleadmin{
+    display: flex;
+    margin-top: 20px;
+}
+
+.triangle-leftadmin {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-right: 15px solid rgba(87, 87, 87, 1);
+    border-bottom: 10px solid transparent;
+    margin-left: 20px;
+    margin-right: -30px;
+    margin-top: 15px;
+}
+
+.triangle-rightadmin {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-left: 15px solid #555;
+    border-bottom: 10px solid transparent;
+    margin-top: 15px;
+}
+
+.warpendadmin{
+    justify-content: end !important;
+    margin-bottom: 20px;
+}
+/* /complain-admin */
+
+/* Review Product */
+.review{
+    margin-top: 140px 
+}
+
+.ContRev {
+    display: "flex";
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stars {
+    display: "flex";
+    flex-direction: row;
+    margin-top: 40px;
+    
+  }
+
+  .revText {
+    border: "1px solid #a9a9a9";
+    border-radius: 5px;
+    padding: 10px;
+    margin: "20px 0";
+    min-Height: 100px;
+    width: 100%;
+    display: block;
+    margin-top: 40px;
+    resize: none;
+    background-color: #3c3c3c;
+    border: 1px solid #BCBCBC;
+    color: white;
+  }
+
+  .RevBtn {
+    border: "1px solid #a9a9a9";
+    border-Radius: 5px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    background-color: #F74D4D;
+    color: white;
+  }
+
+.revTitle{
+    font-size: 24px;
+    color: #F74D4D;
+}
+/* /Review Product */
 
 
 

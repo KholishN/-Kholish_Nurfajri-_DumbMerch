@@ -11,44 +11,41 @@ const Login = () => {
 
     const navigate = useNavigate();
     const handleNavigateToLogin = () => {
-        navigate("/login")
-    }
-
-    const [login, setLogin] = useState({
-        isLogin : false,
-        user: {
-            email: "",
-            password: ""
-        }
-    })
-
-    useEffect(() => {
-        console.log("Login Component Did Mount")
-    },[])
-
-    useEffect(() => {
-        console.log("Login Success")
-    },[login])
-
-    const handleOnSubmit = (e) => {
-        e.preventDefault();
-        const email = document.getElementById("email").value
-        const password = document.getElementById("password").value
-
-        setLogin({
-            isLogin : true ,
-            user : {
-                email,
-                password
-            }
-        })
-
         navigate("/")
     }
 
+    const [login, setLogin] = useState({
+        email: "",
+        password: ""
+    });
+
+    const handleOnChange = (e) =>{
+        setLogin({
+            ...login,
+            [e.target.name]: e.target.value
+        })
+        console.log(e.target.name)
+        console.log(e.target.value)
+
+    }
+
+    const handleOnSubmit = (e) =>{
+        e.preventDefault()
+
+        navigate("/home")
+
+        console.log(login)
+    }
 
 
 
+    // const handleonChange = (e) => {
+    //     setLogin({
+    //         ...login,
+    //         [e.target.name] : e.target.value
+    //     })
+    //     console.log(setLogin())
+    // }
     return(
 
             <Container className="d-flex loginCard">
@@ -58,7 +55,7 @@ const Login = () => {
                 <p className="text-secondary mb-5">Go shopping for merchandise,just go merch shopping. 
                                                 the biggest merchandise in <b>Indonesia</b></p>
                 <Button className="me-5  py-1" onClick={handleNavigateToLogin}>Login</Button>
-                <Link to="/register"className="mt-5 text-light text-decoration-none">Register</Link>
+                <Link to="/register" className="mt-5 text-light text-decoration-none">Register</Link>
                 </div>
             <form onSubmit={handleOnSubmit}>
             <div className="right ms-5">
@@ -70,9 +67,12 @@ const Login = () => {
                             placeholder="Email"
                             aria-label="Email"
                             aria-describedby="basic-addon1"
-                            type="text"
+                            type="email"
                             className="loginInput"
                             id="email"
+                            onChange={handleOnChange}
+                            value={login.email}
+                            name="email"
                             />
                             </InputGroup>
                         <InputGroup className="mb-3" >
@@ -83,6 +83,9 @@ const Login = () => {
                             type="password"
                             className="loginInput"
                             id="password"
+                            onChange={handleOnChange}
+                            value={login.password}
+                            name="password"
                             />
                             </InputGroup>
                         <Button className="mt-4 loginbtn" type="submit">Login</Button>

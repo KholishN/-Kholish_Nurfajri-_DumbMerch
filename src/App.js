@@ -3,7 +3,6 @@ import {BrowserRouter, Routes , Route } from "react-router-dom"
 // "pages" component
 import Login from "./components/Login"
 import Register from "./components/Register"
-import NavigationBarCustomer from "./components/customer/NavigationBarCustomer"
 import HomePage from "./components/customer/HomePage"
 import DetailPage from "./components/customer/DetailPage"
 import Profile from "./components/customer/Profile"
@@ -25,28 +24,29 @@ import "./style/Login.css"
 
 
 function App() {
+
   return (
     <BrowserRouter>
       <div className="my-bg">
-      <NavigationBarCustomer />
-
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/detail-page/:id" element={<DetailPage />} />
-        <Route path="/profile/" element={<Profile />} />
+        <Route path="/profile" element={<Profile />} />
         <Route path="/category/" element={<Category />} />
-        <Route path="/edit-category/" element={<EditCategory />} />
+        <Route path="/edit-category" element={<EditCategory />} />
         <Route path="/product-list" element={<ProductList />} />
         <Route path="/edit-product-list" element={<EditProductList />} />
         <Route path="/complain" element={<CustomerComplain />} />
         <Route path="/admin-complain" element={<AdminComplain />} />
+
 
       </Routes>
       </div>
     </BrowserRouter>
   );
 }
+
 
 export default App;
